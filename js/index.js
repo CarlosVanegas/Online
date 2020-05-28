@@ -1,0 +1,1 @@
+document.getElementById("year").innerHTML = "2018";

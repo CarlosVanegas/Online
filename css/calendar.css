@@ -1,0 +1,92 @@
+ 
+
+.input-calendar{
+  display: grid;
+  grid-template-columns: repeat(3,180px);
+  grid-gap: 10px; 
+  justify-content: center;
+}
+
+ .field-wrap .inup-cal{
+    outline: 0; 
+    padding: 7px 15px;
+    border: 1px solid #A8A8A8;
+    width: 95%;
+    font-family: 'Lato-light';
+    color: #000;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+
+.input-calendar .field-wrap label {
+    margin: 0px 0px 3px 0px;
+    font-size: 10px;
+    color: #808080;
+    font-weight: 600;
+    font-family: 'Lato-light';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#calendar{
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  font-family: 'Lato', sans-serif;
+}
+#calendar_weekdays div{
+  display:inline-block;
+  vertical-align:top;
+}
+#calendar_content, #calendar_weekdays, #calendar_header{
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  float: left;
+  z-index: 10;
+}
+#calendar_weekdays div, #calendar_content div{
+  width:40px;
+  height: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #787878; 
+}
+ 
+#calendar_content div{
+  float: left;
+}
+#calendar_content div:hover{
+  background-color: #F8F8F8;
+}
+#calendar_content div.blank{
+  background-color: #E8E8E8;
+}
+#calendar_header, #calendar_content div.today{
+  zoom: 1; 
+}
+#calendar_content div.today{
+  color: #FFFFFF;
+}
+#calendar_header{
+  width: 100%;
+  height: 37px;
+  text-align: center; 
+  padding: 18px 0; 
+}
+#calendar_header h1{
+  font-size: 1.5em;
+  color: #FFFFFF;
+  float:left;
+  width:70%;
+  font-family: 'Quicksand'; 
+}
+i[class^=icon-chevron]{
+  color: #FFFFFF;
+  float: left;
+  width:15%;
+  border-radius: 50%;
+} 

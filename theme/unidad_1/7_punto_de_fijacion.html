@@ -1,0 +1,113 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Punto de fijación</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="../../icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../../icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../../icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../../icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../../icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-icon-180x180.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../../icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/vdialog.css">  
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"> 
+</head>
+<body>
+	<section class="home-layout">
+		<div class="item-1-header-task">
+	      <div class="nav-right-streaming"> 
+	          </div>
+	          <div class="nav-left-streaming">
+	          	 <span class="icon-phone"></span>
+	            <span class="text-name">(+502) 2217 6500 </span> 
+	            <span class="whith-span"></span>
+	            <span style="margin-left: 23px;" class="icon-envelop"></span>
+	            <span class="text-name">info@innovadiez.com </span> 
+	          </div>
+	           <div class="nav-right-home"> 
+	   
+	          </div>
+	          <div id="navbar-home" class="close-sess"> 
+	          	<span class="icon-user"></span>
+	          	Cerrar Sesion
+	         </div>
+	    </div>
+	    <div class="main_screen"> 
+        <div class="container_unis">
+          <div class="layout_screen">
+          	<div class="" ></div>
+          	<div class="item_layout_screen item2" >
+          		<div class="container_title_text"><p>7. Punto de fijación</p></div>
+          		<div class="container_exercice_all">
+          			<div id="gameScreen">
+									<h2 class="title_text_puntof">Benjamin Franklin</h2>
+									<p class="body_text_puntof">Su verdadero nombre era Richard Saunders. Ha sido llamado el primer norteamericano civilizado: científico, filósofo, político, diplomático, periodista, impresor, negociador, moralista y hasta doble agente. Vivió en diversos territorios y se movió como camaleón en la cultura, la moda y la política, según actuará como hombre público o privado. Fue persona importante en la Declaración de la Independencia de Gran Bretaña y en la Constitución de los Estados Unidos. Franklin que vivió entre 1706 y 1790, es universalmente conocido por su invención del pararrayos, que ha salvado de las tormentas a muchas vidas humanas y bienes materiales. Pero, aunque no lo sepa mucha gente, hay millones de personas que, aún, hoy tienen una importante deuda con don Benjamín, pues, son millones los que se benefician de otro invento suyo: las gafas bifocales.</p>
+          			</div>
+          			<div class="container_controller"> 
+					
+					<div class="item-1-controller">
+		               <div> <button id="menos" class="controller_min_velocity" onclick="Reconocimiento_por_Impacto.prototype.Decrementar_Velocidad();">-</button></div>
+		               <div> <span id="number">1</span></div>
+		               <div> <button id="mas" class="controller_max_velocity" onclick="Reconocimiento_por_Impacto.prototype.Icrementar_Velocidad();">+</button></div>
+            		</div>
+		            <div class="item-2-controller">    
+		            	<button onclick="Start_Game();" id="play_control" class="controller_play_game play_control" style="background-image: url(../assets/images/Play.svg);"></button>
+		            </div>
+		            <div class="item-3-controller">
+		                <button onclick="screenBlack();" id="screenBlack" class="controller_screen_black color_black_control"></button>
+		          		<button onclick="screenWhite();" id="screenWhite" class="controller_screen_white color_white_control"></button>
+		            </div>
+
+          			</div>
+          		</div>
+          	</div>
+          	<div class="containet_item3_screen" >
+          		<div class="inicio_clase">
+          	      <div>
+                  <img src="https://image.flaticon.com/icons/svg/834/834028.svg" height="45" width="45" alt="">
+                </div>
+                	<div class="clock inactive" id="clock">
+                		
+                	</div>
+          		</div>
+          		<div class="item_level">
+          			<button onclick="nextPlay();" class="btnstyle btnstyle-3 btnstyle-3b icon-arrow-right2">Siguiente</button>
+          		</div>
+          		<div class="item_level">
+          			<button onclick="repeatExercice();" class="btnstyle btnstyle-3 btnstyle-3b icon-spinner11">Repetir</button>
+          		</div>
+          		<div class="item_level option_book_return">
+          			<img onclick="unity5();" src="../../images/1-off.png">
+          			<h4>Nivel 5</h4>
+          		</div>
+          	</div>
+          </div>
+        </div>   
+	    </div>   
+	  </section>
+	  <br>
+	  <script type="text/javascript" charset="utf-8">
+	  	function unity5(){
+	  		location.href="./index.html";
+	  	}
+			function nextPlay(){
+			  location.href="./instructions/9.html";
+			}
+	  </script>
+</body>
+ <script src="../assets/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../assets/js/play_stop_button.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../assets/js/vdialog/lib/vdialog.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../assets/js/change-background-color.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../assets/js/timer_forward.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>

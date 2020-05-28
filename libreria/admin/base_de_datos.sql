@@ -1,0 +1,23 @@
+
+
+CREATE TABLE Credenciales_Estudiantes(
+user VARCHAR(200) NOT NULL,
+pass VARCHAR(200) NOT NULL,
+PRIMARY KEY (pass)
+)ENGINE = INNODB; 
+
+
+CREATE TABLE Instancias (
+Ip VARCHAR(200) NOT NULL,
+Huesped VARCHAR(200) NOT NULL,
+Inicio_De_Instancia VARCHAR(200) NOT NULL,
+Galleta BOOL,
+INDEX (Ip)
+); 
+
+
+CREATE TABLE Colapso (
+Objeto VARCHAR(200) NOT NULL,
+Inicio VARCHAR(200) NOT NULL,
+Validacion BOOL
+); 

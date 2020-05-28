@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registrar | SR </title>
+	<link rel="apple-touch-icon" sizes="57x57" href="../icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-icon-180x180.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css'>
+	<link rel="stylesheet" href="../css/style-reservation.css"> 
+	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link rel="stylesheet" href="../css/vdialog.css"> 
+    <link rel="stylesheet" href="../css/calendar.css"> 
+</head>
+<style type="text/css">
+	@media (min-width: 1200px){
+		.container {
+    	width: 100%;
+	}
+	}
+
+</style>
+<body >
+	<section class="home-layout">
+		<div class="item-1-header-task">
+	      <div class="nav-right-streaming"> 
+	          </div>
+	          <div class="nav-left-streaming_admin">
+	          	<img style="margin-top: -13px;" src="../images/logoinnova.png" height="42" width="52"> 
+	          </div>
+	           <div class="nav-right-home"> 
+	   
+	          </div>
+	          <div id="navbar-home" class="close-sess"> 
+	          	<span class="icon-user"></span>
+	          	Cerrar Sesion
+	         </div>
+	    </div>
+	
+	<div class="main main-admin" id="1">
+		<div class="dashboard-adim">
+			<div class="item" id="op1"><h5>Registrar</h5></div>
+			<div class="item" id="op2"><h5>Buscar</h5></div>
+			<div class="item" id="op3">Modificar</div>
+			<div class="item" id="op4" ><h5>Horario de citas</h5></div>
+			<div class="item" id="op3">Modificar</div>
+			<div class="item" id="op3">Modificar</div>
+		</div>
+		<div class="container-admin">
+		<div class="layout-register-admin">
+			<div class="show-item"> 
+				<div class="form-login-admin"> 
+                    <div class="w3ls-form">
+
+                    	<!--FORMULARIO PARA REGISTRAR-->
+                        <form role="form" method="post"> 
+                            <input style="width: 85%" type="number" name="matricula" id="matricula" placeholder="Matricula" autocomplete="off" required="">
+                         	<br><br>
+                             <input style="width: 85%" type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off"  required="">
+                             <br>
+                             <input style="width: 85%" type="text" name="apellido" id="apellido" placeholder="Apellido" autocomplete="off"  required="">
+                             <label>UBICACIÓN</label> 
+
+
+
+                             <div class="check-admin">
+                             	<select class="select-sex-2" name="country" id="country">
+					         	<option value="" disabled="disabled" selected="selected">Ubicación</option>
+					         	<option value="1">Zona 11</option>
+					         	<option value="2">Zona 15</option>
+					         	<option value="3">Xela</option>
+					         	<option value="4">Antigua</option>  
+					         </select>
+								<div>
+									<p class="session_admin">Usuario especial<input style="width: 36px; height: 21px;margin-top: 0px;padding: 10px;position: absolute;cursor: pointer;" type="checkbox" name="check" id="check"></p> 
+								</div>
+                             </div>
+                             
+                            
+                        </form>
+                        <!--FORMULARIO PARA REGISTRAR-->
+
+                        <!--PROCESAR TIEMPO-->
+                        <label>TIEMPO</label><br>
+	                    <button class="time-admin" id="procesar_tiempo">6 Meses </button> 
+	                    <input style="width: 35%; height: 40px; margin-left: 55px;" type="number" name="tiempo" id="tiempo" placeholder="Días" autocomplete="off" required="">
+	                    <br> 
+	                    <!--PROCESAR TIEMPO-->
+
+                        <!--DATOS PROCESADOS-->
+                        <input style="font-size: 20px; width: 85%; float: left;margin: 0px;" type="submit" value="Procesar Usuario" id="procesar_usuario"> 
+                            <br><br><br> 
+                        <label>Usuario : <span id="user_name"></span></label><br>
+                        <label>Contraseña : <span id="user_pass"></span></label><br>
+                        <!--DATOS PROCESADOS-->
+                        <input style="font-size: 20px; width: 85%; float: left;margin: 0px;" type="submit" value="Guardar usuario" id="guardar_usuario"> 
+                        
+                        
+                    </div>
+            </div>
+			</div>
+			<div class="container-layout-number-users">
+				<h4 style="margin: 10px; font-weight: 800;">Usuarios Registrados</h4>
+				<h2 style="margin: 10px;" >240</h2>
+			</div>
+		</div>
+			<div class="show-item"> 
+				<div class="layout-show-admin">
+				 <div class="container" ng-app="formvalid">
+  <div class="panel" data-ng-controller="validationCtrl">
+  <div class="panel-body">
+      <table class="table table-bordered bordered table-striped table-condensed datatable" ui-jq="dataTable" ui-options="dataTableOpt">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Ubicación</th>
+          <th>Matricula</th>
+          <th>Fecha Creación</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr ng-repeat="n in data">
+            <td>{{$index+1}}</td>
+            <td>{{n[0]}}</td>
+            <td>{{n[1]}}</td>
+            <td>{{n[2]}}</td>
+            <td>{{n[3]}}</td>
+            <td>{{n[4] | date:'dd/MM/yyyy'}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+</div>
+				</div>
+			</div>
+			<div class="show-item">
+				<h1>Modificar</h1>
+			</div>
+			<div class="show-item">
+					<div class="field-wrap" style="margin-bottom: 20px;">
+						<div>
+						   <label class="active"> Ubicación<span class="req">*</span>  </label>
+							 <select class="select-sex" name="country" id="country">
+							   <option value="" disabled="disabled" selected="selected">Ubicación</option>
+							   <option>Ciudad de Guatemala - Zona 11</option>
+							   <option>Ciudad de Guatemala - Zona 15</option>
+							   <option>Quetzaltenango - Xela</option>
+							   <option>Sacatepéquez-Antigua</option>  
+							 </select>
+							</div>
+							 <div>
+							   <h3>Hoy</h3>
+							   <h5 id="day" class="current_date" style="display: none;">10/08/2018</h5>
+							   <h5 id="day" class="current_dateB">Viernes 8 de Julio 2018</h5>
+						</div>
+					</div>
+				<div class="cintainer_calendar">
+					<div id="calendar">
+					  <div id="calendar_header">
+						  <i id="left" class="icon-chevron-left"> </i>
+						  <h1 id="old_month"></h1>
+						  <i id="right" class="icon-chevron-right"></i>         
+					  </div>
+					  <div id="calendar_weekdays"></div>
+					  <div id="calendar_content"></div>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+   <footer> 
+	<small>© <span id="year"></span> Innova S.A. Todos los derechos reservados | Smart Reading</small>
+	</footer>
+	</section> 
+
+</body> 
+	
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.0/ui-bootstrap-tpls.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-utils/0.1.1/angular-ui-utils.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js'></script>
+	<script src='https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js'></script>
+	
+	<script src="./index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./admin_calendar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/slick_calendar.js" type="text/javascript" charset="utf-8"></script>  
+	<script src="../js/calendar.js" type="text/javascript" charset="utf-8"></script>  
+	<script src="../js/vdialog/lib/vdialog.js" type="text/javascript"></script> 
+	<script src="./index-serch.js" type="text/javascript" charset="utf-8"></script>
+   	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+   	<script src="../js/abc/insert_user.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>
